@@ -8,11 +8,21 @@ class Adoption
 
   def initialize(details)
     @id = details['id'].to_i if details['id']
-    @animal_id = ['animal_id'].to_i()
-    @owner_id = ['owner_id'].to_i()
-    @adoption_date = ['adoption_date']
+    @animal_id = details['animal_id'].to_i()
+    @owner_id = details['owner_id'].to_i()
+    @adoption_date = details['adoption_date']
   end
 
+
+  def save()
+    sql = "INSERT INTO adoptions(animal_id, owner_id, adoption_date)
+    VALUES
+    ($1, $2, $3)
+    RETURNING id"
+    values = [@animal_id, @owner_id, @adoption_date]
+    results = SqlRunner.run(sql, values)
+    @id = results.first()['id'].to_i
+  end
 
 
 

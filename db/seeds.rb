@@ -29,6 +29,13 @@ require("pry")
 
     owner1.save()
 
+  adoption1 = Adoption.new({
+    "animal_id" => animal1.id,
+    "owner_id" => owner1.id,
+    "adoption_date" => "30/11/2019"
+    })
+
+  adoption1.save()
 
   binding.pry
 
