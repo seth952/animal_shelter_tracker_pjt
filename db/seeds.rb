@@ -17,6 +17,18 @@ require("pry")
 
   animal1.save()
 
+  owner1 = Owner.new({
+    "name" => "Jeff Lebowski",
+    "address" => "23 Mable Road, MW1 5XL",
+    "suitablity" => "Suitable",
+    "has_kids" => "Yes",
+    "has_other_pets" => "No",
+    "give_attention" => "Yes"
+
+    })
+
+    owner1.save()
+
 
   binding.pry
 

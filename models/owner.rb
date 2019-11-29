@@ -17,6 +17,16 @@ class Owner
   end
 
 
+  def save()
+    sql = "INSERT INTO owners(name, address, suitablity, has_kids, has_other_pets, give_attention)
+    VALUES
+    ($1, $2, $3, $4, $5, $6)
+    RETURNING id"
+    values = [@name, @address, @suitablity, @has_kids, @has_other_pets, @give_attention]
+    results = SqlRunner.run(sql, values)
+    @id = results.first()['id'].to_i
+  end
+
 
 
 
