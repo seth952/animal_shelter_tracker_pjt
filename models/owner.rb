@@ -33,6 +33,17 @@ class Owner
     return results.map { |owner| Owner.new(owner)}
   end
 
+  def self.delete_all()
+    sql = "DELETE FROM owners"
+    SqlRunner.run(sql)
+  end
+  #
+  def delete()
+    sql = "DELETE FROM owners WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
+
 
 
 
