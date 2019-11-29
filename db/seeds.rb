@@ -47,6 +47,19 @@ Owner.delete_all()
 
   animal3.save()
 
+  animal4 = Animal.new({
+    "name" => "Alfie",
+    "adopt_status" => "Adoptable",
+    "type" => "Budgie",
+    "breed" => "Green Squaker",
+    "admis_date" => "13/10/2019",
+    "good_with_kids" => "No",
+    "good_with_other_pets" => "No",
+    "need_attention" => "Yes"
+    })
+
+  animal4.save()
+
 
 
   owner1 = Owner.new({
@@ -108,6 +121,14 @@ Owner.delete_all()
     })
 
   adoption3.save()
+
+  adoption4 = Adoption.new({
+    "animal_id" => animal4.id,
+    "owner_id" => owner2.id,
+    "adoption_date" => "29/11/2019"
+    })
+
+  adoption4.save()
 
   binding.pry
 
