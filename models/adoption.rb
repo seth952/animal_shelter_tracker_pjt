@@ -41,8 +41,14 @@ class Adoption
     SqlRunner.run(sql, values)
   end
 
+  def update()
+    sql = "UPDATE adoptions SET
+    (animal_id, owner_id, adoption_date) = ($1, $2, $3)
+    WHERE id = $4"
+    values = [@animal_id, @owner_id, @adoption_date, @id]
+    SqlRunner.run(sql, values)
 
-
+  end
 
 
 

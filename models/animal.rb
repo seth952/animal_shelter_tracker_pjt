@@ -46,13 +46,13 @@ class Animal
   end
 
   def update()
-    sql = "UPDATE owners SET
+    sql = "UPDATE animals SET
     (name, adopt_status, type, breed,
   admis_date, good_with_kids,
   good_with_other_pets, need_attention)
      = ($1, $2, $3, $4, $5, $6, $7, $8)
     WHERE id = $9"
-    values = [@name, @adopt_status, @type, @breed, @admis_date, @good_with_kids, @good_with_other_pets, @need_attention]
+    values = [@name, @adopt_status, @type, @breed, @admis_date, @good_with_kids, @good_with_other_pets, @need_attention, @id]
     SqlRunner.run(sql, values)
   end
 
