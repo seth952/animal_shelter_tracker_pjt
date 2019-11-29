@@ -44,7 +44,14 @@ class Owner
     SqlRunner.run(sql, values)
   end
 
-
+  def update()
+    sql = "UPDATE owners SET
+    (name, address, suitablity, has_kids, has_other_pets, give_attention)
+     = ($1, $2, $3, $4, $5, $6)
+    WHERE id = $7"
+    values = [@name, @address, @suitablity, @has_kids, @has_other_pets, @give_attention]
+    SqlRunner.run(sql, values)
+  end
 
 
 
