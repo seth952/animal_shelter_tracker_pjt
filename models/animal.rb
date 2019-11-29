@@ -17,6 +17,17 @@ class Animal
     @need_attention = details['need_attention']
   end
 
+  def save()
+    sql = "INSERT INTO animals(name, adopt_status, type, breed,
+  admis_date, good_with_kids, good_with_other_pets, need_attention)
+    VALUES
+    ($1, $2, $3, $4, $5, $6, $7, $8)
+    RETURNING id"
+    values = [@name, @adopt_status, @type, @breed, @admis_date, @good_with_kids, @good_with_other_pets, @need_attention]
+    results = SqlRunner.run(sql, values)
+    @id = results.first()['id'].to_i
+  end
+
 
 
 
