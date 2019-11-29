@@ -3,7 +3,7 @@ require_relative( '../db/sql_runner' )
 
 class Animal
 
-  attr_reader( :name, :adopt_status, :type, :breed, :admis_date, :good_with_kids, :good_with_other_pets, :need_attention)
+  attr_reader( :name, :adopt_status, :type, :breed, :admis_date, :good_with_kids, :good_with_other_pets, :need_attention, :id)
 
   def initialize(details)
     @id = details['id'].to_i if details['id']
