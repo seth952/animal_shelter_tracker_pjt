@@ -17,3 +17,8 @@ get '/owners/:id' do
   @owner = Owner.find(id)
   erb(:"owners/show")
 end
+
+#new route
+get '/owners/new' do
+  erb(:"owners/new")
+end
