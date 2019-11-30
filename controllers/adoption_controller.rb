@@ -10,3 +10,21 @@ get '/adoptions' do
   @adoptions = Adoption.all()
   erb (:"adoptions/index")
 end
+
+
+
+
+
+
+
+
+
+
+
+# get '/adoptions/:id' do
+#   id = params[:id].to_i()
+#   @animal = Animal.find(id)
+#   @owner = Owner.find(id)
+#   @adoptions = Adoption.find(id)
+#   erb(:"adoptions/show")
+# end
