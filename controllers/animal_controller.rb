@@ -13,9 +13,15 @@ get '/animals' do
   erb (:"animals/index")
 end
 #new route
-get '/owners/new' do
-  erb(:"owners/new")
+get '/animals/new' do
+  erb(:"animals/new")
 
+end
+
+post '/animals' do
+  animal = Animal.new(params)
+  animal.save()
+  redirect "/animals"
 end
 
 
