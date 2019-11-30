@@ -15,3 +15,7 @@
   <%= @animal.good_with_other_pets %></p>
 <p>Does the animal need attention:
   <%= @animal.need_attention %></p>
+
+  <form action="/animals/<%=@animal.id%>/delete" method="POST">
+  <input type="submit" value="Delete Animal">
+  </form>

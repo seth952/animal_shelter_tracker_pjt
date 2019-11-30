@@ -24,14 +24,17 @@ post '/animals' do
   redirect "/animals"
 end
 
-
-
-
-
-
 #show
 get '/animals/:id' do
   id = params[:id].to_i()
   @animal = Animal.find(id)
   erb(:"animals/show")
+end
+
+
+post '/animals/:id/delete' do
+  id = params[:id].to_i()
+  animal = Animal.find(id)
+  animal.delete()
+  redirect '/animals'
 end
