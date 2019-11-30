@@ -12,6 +12,16 @@ get '/animals' do
   @animals = Animal.all()
   erb (:"animals/index")
 end
+#new route
+get '/owners/new' do
+  erb(:"owners/new")
+
+end
+
+
+
+
+
 
 #show
 get '/animals/:id' do
