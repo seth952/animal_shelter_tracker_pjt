@@ -22,3 +22,10 @@ end
 get '/owners/new' do
   erb(:"owners/new")
 end
+
+#create
+post '/owners' do
+  owner = Owner.new(params)
+  owner.save()
+  redirect "/owners"
+end
