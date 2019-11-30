@@ -1,0 +1,25 @@
+<form action="/owners/<%=@owner.id %>" method="POST">
+
+  <label for="name">Name:</label>
+  <input required type="text" id="name" name="name" value = "<%=@owner.name%>">
+
+  <label for="address">Last Name:</label>
+  <input required type="text" id="address" name="address" value = "<%=@owner.address%>">
+  <label for="suitablity">Suitablity:</label>
+  <input required type="text" id="suitablity" name="suitablity" value = "<%=@owner.suitablity%>">
+
+  <label for="has-kids">Has Kids:</label>
+  <input required type="text" id="has-kids" name="has_kids"value = "<%=@owner.has_kids%>">
+
+  <label for="has-other-pets">Has other pets:</label>
+  <input required type="text" id="has-other-pets" name="has_other_pets"
+  value = "<%=@owner.has_other_pets%>">
+
+  <label for="give-attention">Can give attention:</label>
+  <input required type="text" id="give-attention" name="give_attention"
+  value = "<%=@owner.give_attention%>">
+
+
+  <input type="submit" value="Edit Owner">
+
+</form>
