@@ -17,6 +17,8 @@ class Owner
     @give_attention = details['give_attention']
   end
 
+  
+
 
   def save()
     sql = "INSERT INTO owners(name, address, suitablity, has_kids, has_other_pets, give_attention)
@@ -73,7 +75,7 @@ class Owner
     result = owners.map {|owner| Owner.new(owner)}
     return result;
   end
-  
+
 
 
 

@@ -11,16 +11,10 @@ get '/owners' do
   erb (:"owners/index")
 end
 
-#show
-get '/owners/:id' do
-  id = params[:id].to_i()
-  @owner = Owner.find(id)
-  erb(:"owners/show")
-end
-
 #new route
 get '/owners/new' do
   erb(:"owners/new")
+
 end
 
 #create
@@ -28,4 +22,10 @@ post '/owners' do
   owner = Owner.new(params)
   owner.save()
   redirect "/owners"
+end
+
+get '/owners/:id' do
+  id = params[:id].to_i()
+  @owner = Owner.find(id)
+  erb(:"owners/show")
 end
