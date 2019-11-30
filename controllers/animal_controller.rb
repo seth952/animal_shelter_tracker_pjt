@@ -1,7 +1,11 @@
 require('sinatra')
 require('sinatra/contrib/all')
 require_relative('../models/animal.rb')
+require_relative('../models/owner.rb')
+require_relative('../models/adoption.rb')
 also_reload('../models/*')
+
+
 
 #Index set up
 get '/animals' do
@@ -9,9 +13,9 @@ get '/animals' do
   erb (:"animals/index")
 end
 
-#show route
+#show
 get '/animals/:id' do
   id = params[:id].to_i()
-  @animals = Animal.find(id)
-  erb (:"animals/show")
+  @animal = Animal.find(id)
+  erb(:"animals/show")
 end
