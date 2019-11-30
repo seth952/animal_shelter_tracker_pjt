@@ -1,0 +1,29 @@
+<form action="/animals/<%=@animal.id %>" method="POST">
+
+  <label for="name">Name:</label>
+  <input required type="text" id="name" name="name" value = "<%=@animal.name%>">
+
+  <label for="adopt-status">Adoption Staus:</label>
+  <input required type="text" id="adopt-status" name="adopt_status" value = "<%=@animal.adopt_status%>">
+
+  <label for="type">Type:</label>
+  <input required type="text" id="type" name="type" value = "<%=@animal.type%>">
+
+  <label for="breed">Breed:</label>
+  <input required type="text" id="breed" name="breed" value = "<%=@animal.breed%>">
+
+  <label for="admis-date">Admission Date:</label>
+  <input required type="text" id="admis-date" name="admis_date" value = "<%=@animal.admis_date%>">
+
+  <label for="good-with-kids">Good with Kids:</label>
+  <input required type="text" id="good-with-kids" name="good_with_kids" value = "<%=@animal.good_with_kids%>">
+
+  <label for="good-with-other-pets">Good with other pets:</label>
+  <input required type="text" id="good-with-other-pets" name="good_with_other_pets" value = "<%=@animal.good_with_other_pets%>">
+
+  <label for="need-attention">Needs Attention:</label>
+  <input required type="text" id="need-attention" name="need_attention" value = "<%=@animal.need_attention%>">
+
+  <input type="submit" value="Submit">
+
+</form>
