@@ -2,6 +2,7 @@
 <hr />
 <% for animal in @animals %>
   <p>Name: <%= animal.name() %> </p>
+  <p>Admission Date: <%= animal.admis_date() %> </p>
   <p><a href="/animals/<%= animal.id %>">Animal Details</a></p>
   <hr />
 <% end %>
