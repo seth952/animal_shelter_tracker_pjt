@@ -23,9 +23,16 @@ post '/owners' do
   owner.save()
   redirect "/owners"
 end
-
+#show
 get '/owners/:id' do
   id = params[:id].to_i()
   @owner = Owner.find(id)
   erb(:"owners/show")
+end
+
+post '/owners/:id/delete' do
+  id = params[:id].to_i()
+  owner = Owner.find(id)
+  owner.delete()
+  redirect '/owners'
 end

@@ -11,3 +11,7 @@
   <%= @owner.has_other_pets %></p>
 <p>Can give attention:
   <%= @owner.give_attention %></p>
+
+  <form action="/owners/<%=@owner.id%>/delete" method="POST">
+  <input type="submit" value="Delete Owner">
+</form>
