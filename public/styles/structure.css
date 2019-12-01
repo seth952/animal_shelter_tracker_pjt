@@ -6,7 +6,7 @@ body {
   color: black;
   font-family: fantasy, sans-serif;
   padding: 0px;
-  margin: 200px;
+  margin: 150px;
 }
 
 
@@ -38,5 +38,6 @@ a {
   background-color: ghostwhite;
   margin: 5px;
   padding-left: 10px;
+  
 
 }
