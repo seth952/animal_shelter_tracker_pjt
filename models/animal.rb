@@ -65,17 +65,17 @@ class Animal
     return Animal.new(results.first)
   end
 
-  def owners()
-    sql = "SELECT owners.*
-    FROM owners
-    INNER JOIN adoptions
-    ON adoptions.owner_id = owners.id
-    WHERE animal_id = $1"
-    values = [@id]
-    animals = SqlRunner.run(sql, values)
-    result = animals.map {|animal| Animal.new(animal)}
-    return result;
-  end
+  # def owners()
+  #   sql = "SELECT owners.*
+  #   FROM owners
+  #   INNER JOIN adoptions
+  #   ON adoptions.owner_id = owners.id
+  #   WHERE animal_id = $1"
+  #   values = [@id]
+  #   animals = SqlRunner.run(sql, values)
+  #   result = animals.map {|animal| Animal.new(animal)}
+  #   return result;
+  # end
 
 
 

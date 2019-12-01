@@ -15,9 +15,10 @@ class Owner
     @has_kids = details['has_kids']
     @has_other_pets = details['has_other_pets']
     @give_attention = details['give_attention']
+
   end
 
-  
+
 
 
   def save()

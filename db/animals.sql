@@ -2,6 +2,7 @@ DROP TABLE adoptions;
 DROP TABLE animals;
 DROP TABLE owners;
 
+
 CREATE TABLE animals
 (
   id SERIAL8 primary key,
@@ -24,6 +25,7 @@ CREATE TABLE owners
   has_kids VARCHAR(255),
   has_other_pets VARCHAR(255),
   give_attention VARCHAR(255)
+
 
 );
 

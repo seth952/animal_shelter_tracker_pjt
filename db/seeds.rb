@@ -1,6 +1,8 @@
+
 require_relative( "../models/owner.rb" )
 require_relative( "../models/animal.rb" )
 require_relative( "../models/adoption.rb" )
+
 require("pry")
 
 Adoption.delete_all()
@@ -129,7 +131,7 @@ Owner.delete_all()
     })
 
   adoption4.save()
-  
+
   binding.pry
 
   nil
