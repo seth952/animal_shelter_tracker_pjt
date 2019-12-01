@@ -1,0 +1,42 @@
+body {
+  background: aqua url('/images/puppy-dog.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: right;
+  color: black;
+  font-family: fantasy, sans-serif;
+  padding: 0px;
+  margin: 200px;
+}
+
+
+h1 {
+
+  color: black;
+  margin: 150px;
+  font-family: monospace;
+}
+
+li {
+
+  font-family: fantasy;
+  color: black;
+}
+
+a {
+
+  font-family: fantasy;
+  color: darkred;
+}
+
+.headers{
+  background-color: ghostwhite;
+  margin: 200px;
+
+}
+.title{
+  background-color: ghostwhite;
+  margin: 5px;
+  padding-left: 10px;
+
+}
