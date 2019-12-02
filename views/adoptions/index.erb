@@ -1,9 +1,13 @@
-<h3>Our Owners with Adopted Animals</h3>
+<div class="headers">
+<h2>Our Owners with Adopted Animals</h2>
+</div>
+<div class="headers">
 <hr />
 <% for adoption in @adoptions %>
   <p>Date of Adoption: <%= adoption.adoption_date() %> </p>
   <p>Owner name: <%= adoption.owner().name %> </p>
   <p>Animal name: <%= adoption.animal().name %> </p>
-  
+  <!-- <p><a href="/adoptions/<%= adoption.id %>">Details of Our Adoptions</a></p> -->
   <hr />
 <% end %>
+</div>

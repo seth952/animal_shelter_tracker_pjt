@@ -1,4 +1,7 @@
-<h3>All our Animals</h3>
+<div class="headers">
+<h2>All our Animals</h2>
+</div>
+<div class="headers">
 <hr />
 <% for animal in @animals %>
   <p>Name: <%= animal.name() %> </p>
@@ -6,3 +9,4 @@
   <p><a href="/animals/<%= animal.id %>">Animal Details</a></p>
   <hr />
 <% end %>
+</div>

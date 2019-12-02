@@ -1,7 +1,11 @@
-<h3>All our Owners</h3>
-<hr />
+<div class="headers">
+<h2>All our Owners</h2>
+</div>
+<div class="headers">
+<hr>
 <% for owner in @owners %>
   <p>Name: <%= owner.name() %> </p>
   <p><a href="/owners/<%= owner.id %>">Owner Details</a></p>
   <hr />
 <% end %>
+</div>
