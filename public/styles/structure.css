@@ -25,10 +25,11 @@ li {
 
   font-family: fantasy;
   color: black;
-  float: center;
+  
   text-align: center;
   flex-wrap: wrap;
   padding: 14px 16px;
+
 
 
 }
@@ -38,6 +39,9 @@ a {
   font-family: fantasy;
   color: black;
   font-size: 1.2em;
+  display:block;
+  padding: 8px;
+
 
 }
 
