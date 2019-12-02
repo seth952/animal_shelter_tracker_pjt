@@ -9,6 +9,6 @@ also_reload('../models/*')
 
 get '/adoptions' do
   @adoptions = Adoption.all()
-
+@owners = Owner.all()
   erb (:"adoptions/index")
 end

@@ -1,4 +1,5 @@
 require_relative( '../db/sql_runner' )
+require_relative('owner')
 
 
 
@@ -59,6 +60,18 @@ class Adoption
     return Adoption.new(results.first)
   end
 
+  def owner()
+    sql = "SELECT * FROM owners WHERE id = $1"
+    values = [@owner_id]
+    result = SqlRunner.run(sql, values).first
+    return Owner.new(result)
+  end
+  def animal()
+    sql = "SELECT * FROM animals WHERE id = $1"
+    values = [@animal_id]
+    result = SqlRunner.run(sql, values).first
+    return Animal.new(result)
+  end
 
 
 
