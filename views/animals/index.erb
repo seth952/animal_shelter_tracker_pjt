@@ -1,12 +1,13 @@
 <div class="headers">
 <h2>All our Animals</h2>
 </div>
-<div class="headers">
+<div class="animal-container">
 <hr />
 <% for animal in @animals %>
   <p>Name: <%= animal.name() %> </p>
   <p>Admission Date: <%= animal.admis_date() %> </p>
   <p><a href="/animals/<%= animal.id %>">Animal Details</a></p>
+  <img src="/images/animals.jpg" alt="dog">
   <hr />
 <% end %>
 </div>

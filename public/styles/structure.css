@@ -5,8 +5,8 @@ body {
   background-position: right;
   color: black;
   font-family: fantasy, sans-serif;
-  padding: 50px;
-  margin: 100px;
+  padding: 60px;
+  margin: 10px;
 }
 a:hover, a:active, a:focus {
   color: #c6e2ff;
@@ -15,7 +15,6 @@ a:hover, a:active, a:focus {
 
 
 h1 {
-
   color: black;
   margin: 150px;
   font-family: monospace;
@@ -25,10 +24,11 @@ li {
 
   font-family: fantasy;
   color: black;
-  
-  text-align: center;
-  flex-wrap: wrap;
-  padding: 14px 16px;
+
+
+  /* text-align: center; */
+  /* flex-wrap: wrap; */
+  /* padding: 14px 16px; */
 
 
 
@@ -39,7 +39,7 @@ a {
   font-family: fantasy;
   color: black;
   font-size: 1.2em;
-  display:block;
+  /* display:block; */
   padding: 8px;
 
 
@@ -47,7 +47,7 @@ a {
 
 .headers{
   background-color: ghostwhite;
-  margin: 200px;
+  margin: 100px;
 
 }
 .title{
@@ -77,13 +77,15 @@ a:hover, a:active, a:focus {
 nav {
   padding: 0px;
   margin: 0px;
-  padding-right: 25px;
+
 }
 
-nav ul li {
-  margin-bottom: 15px;
+nav li {
+  display:inline;
+  margin-bottom: 10px;
   text-transform: none;
-  flex-direction: row;
+  text-align: justify;
+  /* flex-direction: row; */
 }
 
 ul {
@@ -92,17 +94,25 @@ ul {
   list-style-type: none;
 }
 
-main {
+/* main {
   padding: 25px;
-}
+} */
 
-.flex {
+/* .flex {
   display: flex;
 }
 
 .flex--row {
   flex-direction: row-reverse;
-}
+} */
 h2{
   font-size: 1.7em;
+}
+
+.animal-container {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  padding: 20px;
+  height:min-content;
 }
