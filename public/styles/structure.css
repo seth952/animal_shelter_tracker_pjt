@@ -1,5 +1,5 @@
 body {
-  background: aqua url('/images/puppy-dog.jpg');
+  background: black url('/images/puppy-dog.jpg');
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: right;
@@ -48,6 +48,7 @@ a {
 .headers{
   background-color: ghostwhite;
   margin: 100px;
+  flex-direction: column;
 
 }
 .title{
@@ -113,6 +114,13 @@ h2{
   display: flex;
   flex-direction: column;
   width: min-content;
-  padding: 20px;
+
   height:min-content;
+  background-color: wheat;
+
+}
+.ownform{
+  background-color: ghostwhite;
+  margin: 100px;
+  flex-direction: column;
 }
