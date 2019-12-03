@@ -13,3 +13,7 @@ get '/adoptions' do
   @animals = Animal.all()
   erb (:"adoptions/index")
 end
+
+get'/home' do
+  erb(:home)
+end

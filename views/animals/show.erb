@@ -1,6 +1,6 @@
 <h1>Animal -
   <%= @animal.name %>(<%= @animal.type %>)</h1>
-
+<div class="headers">
 <p>Adoption Status:
   <%= @animal.adopt_status %></p>
 <p>Type:
@@ -16,9 +16,11 @@
 <p>Does the animal need attention:
   <%= @animal.need_attention %></p>
 
-<p><a href="/animals/<%= @animal.id %>/edit">Update Animal</a></p>
+  <form action="/animals/<%=@animal.id%>/edit" method="GET">
+  <input type="submit" value="Update Animal">
+  </form>
 
   <form action="/animals/<%=@animal.id%>/delete" method="POST">
   <input type="submit" value="Delete Animal">
   </form>
-  
+</div>

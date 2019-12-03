@@ -18,18 +18,13 @@ h1 {
   color: black;
   margin: 150px;
   font-family: monospace;
+  background-color: ghostwhite;
 }
 
 li {
 
   font-family: fantasy;
   color: black;
-
-
-  /* text-align: center; */
-  /* flex-wrap: wrap; */
-  /* padding: 14px 16px; */
-
 
 
 }
@@ -39,7 +34,7 @@ a {
   font-family: fantasy;
   color: black;
   font-size: 1.2em;
-  /* display:block; */
+
   padding: 8px;
 
 
@@ -50,30 +45,18 @@ a {
   margin: 100px;
   flex-direction: column;
 
+
 }
 .title{
   background-color: ghostwhite;
-  margin: 5px;
+  margin: 80px;
   padding-left: 10px;
   text-decoration: underline;
   text-shadow: bold;
   text-align:justify;
   font-size: 1.2em;
-
-
-
-}
-/*
-
-}
-a, a:link, a:visited {
-  color: black;
-  text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
-  color: black;
-} */
 
 nav {
   padding: 0px;
@@ -86,7 +69,7 @@ nav li {
   margin-bottom: 10px;
   text-transform: none;
   text-align: justify;
-  /* flex-direction: row; */
+
 }
 
 ul {
@@ -95,32 +78,39 @@ ul {
   list-style-type: none;
 }
 
-/* main {
-  padding: 25px;
-} */
 
-/* .flex {
-  display: flex;
-}
-
-.flex--row {
-  flex-direction: row-reverse;
-} */
 h2{
   font-size: 1.7em;
 }
 
 .animal-container {
+
   display: flex;
   flex-direction: column;
   width: min-content;
-
   height:min-content;
   background-color: wheat;
+  padding-left: : 200px;
+  padding-right: 200px;
+  margin: auto;
+
+
+}
 
 }
 .ownform{
   background-color: ghostwhite;
   margin: 100px;
   flex-direction: column;
+}
+
+.animals{
+  background-color: ghostwhite;
+  margin: 80px;
+  padding-left: 10px;
+  text-decoration: underline;
+  text-shadow: bold;
+  text-align:justify;
+  font-size: 1.2em;
+
 }

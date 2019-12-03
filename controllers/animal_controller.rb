@@ -50,3 +50,11 @@ post '/animals/:id' do
   animal.update()
   redirect '/animals'
 end
+
+get '/home/' do
+  @adoptions = Adoption.all()
+  @owners = Owner.all()
+  @animals = Animal.all()
+  erb (:home)
+
+end
