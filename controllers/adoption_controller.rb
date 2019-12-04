@@ -14,6 +14,19 @@ get '/adoptions' do
   erb (:"adoptions/index")
 end
 
+
+get '/adoptions/new' do
+  @animal = Animal.all
+  @owner = Owner.all
+  erb (:"adoptions/new")
+end
+
+post '/adoptions' do
+  adoption = Adoption.new(params)
+  adoption.save
+  redirect("/adoptions")
+end
+
 get'/home' do
   erb(:home)
 end

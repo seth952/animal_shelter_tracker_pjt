@@ -1,0 +1,24 @@
+<h1>Adoptions</h1>
+<div class= "headers">
+<form action="/adoptions" method="post">
+  <label>
+  Choose an Animal:
+    <select name="animal_id">
+      <% for animal in @animal %>
+      <option value="<%= animal.id %>"><%= animal.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <label>
+    Choose an Owner:
+    <select name="owner_id">
+      <% for owner in @owner %>
+      <option value="<%= owner.id %>"><%= owner.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <input type='submit' value="Complete Adoption">
+</form>
+</div>
