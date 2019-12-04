@@ -1,5 +1,11 @@
 
-
+<h1>Adoption -
+  <%= @animal.name %>(<%= @animal.type %>)</h1>
+<div class="headers">
+<p>Adoption Status:
+  <%= @owner.name %></p>
+<p>Type:
+  <%= @adoption.adoption_date %></p>
 
 
 <form action="/adoption/<%=@adoption.id%>/delete" method="POST">

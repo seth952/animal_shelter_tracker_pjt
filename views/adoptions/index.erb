@@ -8,11 +8,14 @@
   <p>Owner name: <%= adoption.owner().name %> </p>
   <p>Animal name: <%= adoption.animal().name %> </p>
 
+  <form action="/adoptions/<%=adoption.id%>/delete" method="POST">
+  <input type="submit" value="Delete Adoption">
+  </form>
 
   <hr />
+
 <% end %>
 
 </div>
-
 
 <hr>

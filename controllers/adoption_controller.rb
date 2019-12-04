@@ -28,7 +28,9 @@ post '/adoptions' do
 end
 
 post '/adoptions/:id/delete' do
-  Adoption.delete(params[:id])
+  id = params[:id].to_i()
+  adoption = Adoption.find(id)
+  adoption.delete()
   redirect("/adoptions")
 end
 
