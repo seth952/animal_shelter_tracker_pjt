@@ -27,6 +27,11 @@ post '/adoptions' do
   redirect("/adoptions")
 end
 
+post '/adoptions/:id/delete' do
+  Adoption.delete(params[:id])
+  redirect("/adoptions")
+end
+
 get'/home' do
   erb(:home)
 end

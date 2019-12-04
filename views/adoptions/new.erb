@@ -1,6 +1,8 @@
 <h1>Adoptions</h1>
 <div class= "headers">
 <form action="/adoptions" method="post">
+  <p>Set up the adoption if all relevant checks are complete.</p>
+  <p>Remind customer will check-in from time to time.</p>
   <label>
   Choose an Animal:
     <select name="animal_id">
@@ -18,7 +20,11 @@
       <% end %>
     </select>
   </label>
+  <label for="adoption-date">Adoption Date:</label>
+  <input required type="text" id="adoption-date" name="adoption_date">
 
   <input type='submit' value="Complete Adoption">
+  
+  <p>Thank the customer and remind them of our new Vet Practice open now.</p>
 </form>
 </div>
