@@ -13,3 +13,9 @@ CRUD actions for animals/owners
 Have separate pages for animals ready for adoption and ones still in training/vet care
 Search for animals by breed/type
 Any other ideas you might come up with
+
+In order to start sinatra run - ruby app.rb
+In order to run pry testing for errors run - ruby db/seeds.rb
+To clear the databse and run drop and create the databases run - psql -d animal_shelter -f db/animals.sql
+To access the databse run - psql animal_shelter
+To search in the databse run - SELECT * From animals;    etc
